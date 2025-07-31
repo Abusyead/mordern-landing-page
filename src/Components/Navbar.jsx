@@ -21,7 +21,7 @@ function Navbar() {
         initial="hidden"
         whileInView="show"
         viewport={{once:true}}
-        className=' bg-white/90 border-b-2 border-gray-200'>
+        className=' bg-white/90 border-b-2 z-100 border-gray-200 fixed top-0 left-0 right-0 '>
         <div className=' container  mx-auto md:h-20 h-16 md:px-8 px-4 flex items-center justify-between'>
             {/* logo */}
             <div>

@@ -8,8 +8,8 @@ import {motion} from 'framer-motion'
 
 function HeroArea () {
   return (
-    <section className='container mx-auto pt-24 px-4 md:px-8 '>
-      <div className='flex justify-center items-center gap-5'>
+    <section className='container mx-auto pt-44 pb-24 px-4 md:px-8 '>
+      <div className='flex justify-center items-center md:flex-row flex-col gap-5'>
 
         {/* left section */}
         <div className='w-full md:w-1/2  '>
@@ -29,13 +29,13 @@ function HeroArea () {
                 initial="hidden"
                 whileInView="show"
                 viewport={{once:true}}
-                className='text-4xl sm:text-5xl md:text-6xl font-semibold md:font-bold leading-tight mt-6 md:mt-8 relative'>
+                className='text-5xl md:text-6xl font-semibold md:font-bold leading-tight mt-6 md:mt-8 relative'>
                   We boost the growth for
                   <span className='relative inline-block  text-blue-600 '>
-                  Startup to Fortne 500
+                  Startup to Fortne 500                                 
                   <span className=' absolute bg-blue-200 w-full h-0.5 left-0 -bottom-1'></span> 
-                  </span>
-                  Companies
+                  </span> 
+                   Companies
                   <span className=' animate-pulse'>🕒</span>
               </motion.h1>
               <motion.p
@@ -63,7 +63,7 @@ function HeroArea () {
          initial="hidden"
          whileInView="show"
          viewport={{once:true}}
-         className='w-full md:w-1/2'>
+         className='w-full md:w-1/2 md:mt-0 mt-10'>
               <img className=' hover:scale-[1.02] transition-transform duration-300' src={HeroImg} alt="" />
         </motion.div>
       </div>
