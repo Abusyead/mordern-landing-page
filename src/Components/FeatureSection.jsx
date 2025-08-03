@@ -24,7 +24,7 @@ import {motion} from 'framer-motion'
 function FeatureSection() {
   return (
     <section>
-         <div className='max-w-7xl mx-auto px-5 py-12'>
+         <div className='md:max-w-7xl container mx-auto px-5 py-12'>
 
             {/* title section */}
 
@@ -43,7 +43,7 @@ function FeatureSection() {
               variants={fadeIn("left", 0.4)}
               initial="hidden"
               whileInView="show"
-              viewport={{once:true}}  className='flex justify-center items-center gap-10'>
+              viewport={{once:true}}  className='flex justify-center items-center flex-col md:flex-row gap-10'>
                 {Features.map((data , index) => (
                     <div className='flex justify-center items-center flex-col text-center' key={index}>
                         <div

@@ -4,6 +4,8 @@ import HeroArea from "./Components/HeroArea"
 import CompanyLogo from './Components/CompanyLogo'
 import PurPoseSection from './Components/PurPoseSection'
 import FeatureSection from './Components/FeatureSection'
+import Streamleine from './Components/Streamleine'
+import Intorducing from "./Components/Intorducing"
 
 function App() {
 
@@ -14,6 +16,9 @@ function App() {
         <CompanyLogo />
         <PurPoseSection />
         <FeatureSection />
+        <Streamleine />
+        <Intorducing />
+
     </>
   )
 }

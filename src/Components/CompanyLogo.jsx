@@ -18,7 +18,7 @@ function CompanyLogo() {
       initial="hidden"
       whileInView="show"
       viewport={{once:true}}
-      className='container mx-auto py-24 overflow-hidden flex items-center'>
+      className='container px-5 mx-auto py-24 overflow-hidden flex items-center'>
         <div className='relative z-10 bg-white'>
             <span className='absolute left-0 h-16 w-1 bg-blue-500 -top-1'></span>
             <p className='md:w-[300px] w-[200px] pl-3 md:pl-8 pr-0 md:pr-16 text-base font-semibold text-gray-700'>Proud partner at <br />
