@@ -1,5 +1,7 @@
 import { div, h2 } from 'framer-motion/client';
 import React from 'react'
+import { fadeIn } from '../Utils/motion'
+import {motion} from 'framer-motion'
 
 const Features = [
     {
@@ -17,17 +19,27 @@ const Features = [
 function PurPoseSection() {
   return (
     <section className='  bg-gray-100 px-8 py-12'>
-        <div className=' md:px-10 lg:px-20 xl:px-30 container mx-auto grid grid-cols-1 lg:grid-cols-12 bg-amber-300'>
+        <div className=' md:px-10 lg:px-20 xl:px-30 container mx-auto grid grid-cols-1 lg:grid-cols-12'>
 
             {/* left colum */}
-            <div className='lg:col-span-4'>
+            <motion.div
+             variants={fadeIn("right", 0.3)}
+             initial="hidden"
+             whileInView="show"
+             viewport={{once:true}}
+             className='lg:col-span-4'>
                 <h4 className=' text-base font-medium capitalize text-[#FA9810] mb-2'>Achieve More</h4>
                 <h2 className='text-4xl md:w-4/6 leading-tight w-full font-bold'>Purpose of a convoy is to keep your team</h2>
-            </div>
+            </motion.div>
 
             {/* right colum */}
 
-            <div className='lg:col-span-8 '>
+            <motion.div
+             variants={fadeIn("down", 0.3)}
+             initial="hidden"
+             whileInView="show"
+             viewport={{once:true}}
+             className='lg:col-span-8 '>
                 <div className='grid md:grid-cols-2 grid-cols-1 '>
                     {Features.map((data , index) =>(
                         <div key={index} className='flex lg:mt-0 md:mt-10 mt-8'>
@@ -40,7 +52,7 @@ function PurPoseSection() {
                         </div>
                     ))}
                 </div>
-            </div>
+            </motion.div>
             
         </div>
     </section>
