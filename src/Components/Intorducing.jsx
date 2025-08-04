@@ -9,7 +9,7 @@ function Streamleine() {
     <section>
         <div className='flex md:max-w-7xl md:py-24 py-5 px-5 items-center gap-10 mx-auto md:flex-row flex-col container'>
             <motion.div
-              variants={fadeIn("right", 0.3)}
+              variants={fadeIn("right", 0.4)}
               initial="hidden"
               whileInView="show"
               viewport={{once:true}} 
@@ -21,7 +21,7 @@ function Streamleine() {
                 <a href='#' className='flex gap-2 hover:gap-4 mt-8 font-semibold text-blue-600 transition-all items-center'>Learn more about monitoring<FaArrowRight className='size-6'/></a>
             </motion.div>
             <motion.div
-             variants={fadeIn("left", 0.3)}
+             variants={fadeIn("left", 0.5)}
              initial="hidden"
              whileInView="show"
              viewport={{once:true}} 
