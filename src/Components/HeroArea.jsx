@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 
 function HeroArea () {
   return (
-    <section className='container mx-auto pt-44 pb-24 px-4 md:px-8 '>
+    <section className='container mx-auto pt-44 pb-24 px-4 md:px-8 ' id='home'>
       <div className='flex justify-center items-center md:flex-row flex-col gap-5'>
 
         {/* left section */}

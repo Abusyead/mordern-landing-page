@@ -7,6 +7,7 @@ import FeatureSection from './Components/FeatureSection'
 import Streamleine from './Components/Streamleine'
 import Intorducing from "./Components/Intorducing"
 import PricingSection from './Components/PricingSection'
+import FutureSection from './Components/FutureSection'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Streamleine />
         <Intorducing />
         <PricingSection />
+        <FutureSection />
     </>
   )
 }
