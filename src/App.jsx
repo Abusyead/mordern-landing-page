@@ -8,6 +8,7 @@ import Streamleine from './Components/Streamleine'
 import Intorducing from "./Components/Intorducing"
 import PricingSection from './Components/PricingSection'
 import FutureSection from './Components/FutureSection'
+import ClientSection from './Components/ClientSection'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Intorducing />
         <PricingSection />
         <FutureSection />
+        <ClientSection />
     </>
   )
 }
